@@ -1,0 +1,2069 @@
+body{
+    background-color: #141814;
+    margin: 0;
+    padding: 0;
+}
+section {
+    margin: 0;
+    padding: 0;
+    background-image: url("Assets/Hero-Page-for-Gigleaz-2-Fiinal.png"); 
+    background-size: cover;
+    font-family: Poppins;
+    height: 130vh;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(180deg, rgba(10, 10, 10, 0.20) 0%, rgba(115, 115, 115, 0.30) 100%);
+    backdrop-filter: blur(15px);
+    padding: 10px 20px;
+    border-radius: 0px 0px 10px 10px;
+}
+
+.logo img{
+    width: 120px;
+    height: 43px;
+    margin-left: 30%;
+    padding-top: 5%;
+    
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    flex: 1;
+    justify-content: center;
+    gap:3%;
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.5s ease;
+    position: relative;
+    font-weight: 551;
+    font-style: normal;
+}
+
+.nav-links > li > a:hover { 
+    font-style: normal;
+    font-weight: 550;
+    line-height: normal;
+    font-size: 18px;
+} 
+    
+    
+.nav-links > li > a::after {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 1.5px;
+    background-color: #fff;
+    transition: width 0.3s ease-in-out;
+}
+
+.nav-links > li > a:hover::after {
+    width: 83%;
+}
+    
+
+.navbar button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    color: #000;
+    transition: color 0.3s ease;
+}
+
+
+#dropped{
+    font-size: 10px;
+  }
+
+.icons {
+    display: flex;
+    align-items: center;
+    margin-right: 3%;
+}
+.dropdown-content {
+    display: none; 
+    position: absolute;
+    top: 0; 
+    left: 0;
+    width: 100vw; 
+    padding-top: 7%;
+    height: 55vh; 
+    border-radius: 0px 0px 15px 15px;
+    /* background: linear-gradient(90deg, rgba(10, 10, 10, 0.25) 0%, rgba(115, 115, 115, 0.25) 100%); */
+    background-color: rgba(0, 0, 0, 0.5);  
+    
+    backdrop-filter: blur(4px);
+       /* background: linear-gradient(180deg, rgba(10, 10, 10, 0.20) 0%, rgba(115, 115, 115, 0.30) 100%);
+    backdrop-filter: blur(15px); */
+    z-index: -1;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); 
+    animation: slideDown 0.2s ease-in-out;
+}
+
+.dropdown-content a {
+    color:#fff;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+
+    text-align: left;
+    margin-left: 4%;
+
+}
+
+
+.dropdown-content a:hover{
+    border: 1px solid;
+    height:20px;
+    width:250px;
+    border-bottom-right-radius: 4px;
+    border-left:none;
+    border-top: none;
+}
+.hover_opp:hover{
+    border: 1px solid;
+    height: 20px;
+    width:250px;
+    border-bottom-right-radius: 4px;
+    border-left:none;
+    border-top: none;
+}
+.dropdown-content{
+    display:none;
+    position:absolute;
+
+  }
+
+.drp:hover .dropdown-content{
+    display: block !important;
+    }
+
+
+
+
+    .frame-parent1  a:hover{
+        border-style: solid;
+        height: 20px;
+        width:250px;
+        border-radius: 4px;
+        border-left:none;
+        border-top: none;
+    }
+    .quantumnet {
+        position: relative;
+        font-size: 16px;
+        width: 250px;
+        
+  }
+  .quantumnet-wrapper {
+        width: 340px;
+        border-radius: 8px 0px 8px 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        padding: 5px 50px;
+        box-sizing: border-box;
+  }
+
+
+  .frame-parent {
+        width: 90vw;
+        position: relative;
+        height: 21vw;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        justify-content: flex-start;
+        padding: 20px;
+        box-sizing: border-box;
+        gap: -10px;
+        text-align: left;
+        font-size: 17px;
+        color: #fdfdfd;
+        font-family: Poppins;
+  }
+.frame-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 15px;
+}
+
+.frame-parent1 {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction:row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 20px;
+    box-sizing: border-box;
+    gap: 10px;
+    text-align: left;
+    font-size: 16px;
+    color: #fdfdfd;
+    font-family: Poppins;
+}
+
+
+
+
+
+.slider ul{
+    padding: 0;
+    margin: 0;
+    padding-left: 25px;
+    list-style: none;
+    margin-bottom: 15%;
+    margin-top: 10%;
+}
+.slider ul li a {
+    display: inline-block; 
+    color: #fff;
+    font-size: 18px;
+    text-decoration: none;
+    padding-top: 8px;
+    padding-bottom: 5px; 
+    position: relative; 
+}
+.slider p a {
+    font-size: 12px; /* Adjust the font size as needed */
+    padding-left: 25px;
+    text-decoration: none;
+    color: #fff;
+    
+    
+
+}
+
+.slider p {
+    margin-top: -2%;
+}
+.slider ul li a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0; /* Initially no width */
+    height: 2px; /* Height of the underline */
+    background-color: #1e1c1c; /* Color of the underline */
+    transition: width 0.3s ease; /* Transition for width */
+}
+
+.slider ul li a:hover::after {
+    width: 50%; /* Set width to 50% on hover */
+}
+
+
+#custom-menu-trigger:checked + .slider{
+    transform: translateX(0%);
+}
+
+
+#custom-menu-trigger:checked + .slider + .custom-close-icon {
+    display: block;
+}
+
+
+
+
+
+
+
+
+
+
+@keyframes slideDown {
+        from {
+            opacity: 0;
+            transform: translateY(-20px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+ @keyframes slideUp {
+        from {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        to {
+            opacity: 0;
+            transform: translateY(-20px);
+        }
+    }
+    
+    .dropdown-content.slide-up {
+        animation: slideUp 0.4s ease-in-out;
+    } 
+
+    /* .slider {
+        position: fixed;
+        top: 0;
+        right: -100%; 
+        width: 30%;
+        height: 100%;
+        background: linear-gradient(180deg, rgba(10, 10, 10, 0.20) 0%, rgba(115, 115, 115, 0.30) 100%);
+        backdrop-filter: blur(15px);
+        overflow-x: hidden;
+        transition: 0.5s;
+        z-index: 1001;
+        padding-top: 60px;
+    }
+    
+    .slider.open {
+        right: 0;
+    }
+    
+    .close-btn {
+        position: absolute;
+        top: 13px;
+        right: 25px;
+        background:none;
+        color: #fff;
+        border-style: none;
+        font-size: 37px;
+        cursor: pointer;
+    } */
+
+
+    .custom-nav-ico {
+        display: inline-block;
+        position: relative;
+        padding-right: 2%;
+        
+        }
+    .custom-nav-ico label{
+        position: absolute;
+       
+        top:0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        cursor: pointer;
+    }
+    /* .custom-nav-ico span{
+        display: block;
+        height: 4px;
+        width: 30px;
+        background: #000;
+        margin: 4px 0
+    } */
+
+
+
+
+
+    .custom-side-nav {
+        position: fixed;
+        right: 0;
+        top: 0;
+        width:25%;
+        height: 100vh;
+        /* background:#f1f1f1; */
+        z-index: 1001;
+        /* padding-top: 100px; */
+        transition: all 0.3s ease-in-out;
+        transform: translateX(100%);
+        background: linear-gradient(180deg, rgba(10, 10, 10, 0.20) 0%, rgba(115, 115, 115, 0.30) 100%);
+        backdrop-filter: blur(15px);
+        overflow-x: hidden;
+        /* transition: 0.5s; */
+    }
+   .custom-side-nav ul{
+    padding-bottom: 120px;
+   }
+    #custom-menu-trigger:checked + .custom-side-nav{
+        transform: translateX(0%);
+    }
+    .custom-side-nav ul{
+        padding: 0;
+        margin: 0;
+        padding-left: 25px;
+        list-style: none;
+    }
+
+    .custom-side-nav img{
+        margin-top:5%;
+        margin-left: 2%;
+    
+    }
+
+    .custom-side-nav ul{
+        margin-bottom: -26%;
+        margin-top: 7%;
+    }
+    .custom-side-nav ul li a {
+        display: inline-block; 
+        color: #fff;
+        font-size: 18px;
+        text-decoration: none;
+        padding-top: 10px;
+        padding-bottom: -10px; 
+        position: relative; 
+    }
+    .custom-side-nav p a {
+        font-size: 12px; /* Adjust the font size as needed */
+        padding-left: 25px;
+        text-decoration: none;
+        color: #fff;
+    }
+
+
+    .custom-side-nav p {
+        margin-top: -3%;
+    }
+
+
+    .custom-side-nav > ul> li > a:hover { 
+        font-style: normal;
+        font-weight: 550;
+        line-height: normal;
+        font-size: 27px;
+    } 
+    .custom-side-nav ul li a::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0; 
+        height: 2px; 
+        background-color: #fff; 
+        transition: width 0.3s ease;
+    }
+
+    .custom-side-nav ul li a:hover::after {
+        width: 50%; 
+
+    }
+
+    .custom-close-icon {
+        color: #fff; 
+        font-size: 32px;
+        position: absolute;
+        right: 46px;
+        top: 14px;
+        cursor: pointer;
+        transform: rotate(45deg); 
+        transition: transform 0.3s ease; 
+    }
+
+
+
+    .custom-service-nav {
+        position: fixed;
+        left: 100%;
+        top: 0;
+        width: 100%; /* Adjust the width as needed */
+        height: 100vh;
+        background: linear-gradient(180deg, rgba(10, 10, 10, 0.20) 0%, rgba(115, 115, 115, 0.30) 100%);
+        backdrop-filter: blur(15px);
+        z-index: 1000;
+        padding-top:20px;
+        padding-left: 20px;
+        /* transition: height 0.3s ease, transform 0.3s ease; */
+        transition: left 0.3s ease-in-out; 
+        /* display: flex;
+        flex-direction: column; */
+    }
+
+    #services-trigger:checked + .custom-service-nav {
+        left:0;
+     
+    }
+       .service {
+        width: calc((100% - 100px) / 4); /
+      } 
+
+
+
+
+
+      .custom-industries-nav {
+        /* CSS styles for the industries slider */
+        position: fixed;
+        left: 100%;
+        top: 0;
+        width: 100%; /* Adjust the width as needed */
+        height: 100vh;
+        background: linear-gradient(180deg, rgba(10, 10, 10, 0.20) 0%, rgba(115, 115, 115, 0.30) 100%);
+        backdrop-filter: blur(15px);
+        z-index: 1000;
+        padding-top:20px;
+        padding-left: 20px;
+        /* transition: all 0.3s ease-in-out;
+        transform: translateX(-100%); */
+        transition: left 0.3s ease-in-out; 
+        
+    }
+    #industries-trigger:checked + .custom-industries-nav {
+        left:0;
+     
+    }
+
+
+
+    .custom-platforms-nav {
+        /* CSS styles for the platforms slider */
+        position: fixed;
+        left: 100%;
+        top: 0;
+        width: 100%; /* Adjust the width as needed */
+        height: 100vh;
+        background: linear-gradient(180deg, rgba(10, 10, 10, 0.20) 0%, rgba(115, 115, 115, 0.30) 100%);
+        backdrop-filter: blur(15px);
+        z-index: 1000;
+        padding-top:20px;
+        padding-left: 20px;
+        transition: left 0.3s ease-in-out; 
+       
+    }
+
+    #platforms-trigger:checked + .custom-platforms-nav {
+        left:0;
+     
+    }
+
+
+
+
+    .custom-joinus-nav{
+
+        position: fixed;
+        left: 100%;
+        top: 0;
+        width: 100%; /* Adjust the width as needed */
+        height: 100vh;
+        background: linear-gradient(180deg, rgba(10, 10, 10, 0.20) 0%, rgba(115, 115, 115, 0.30) 100%);
+        backdrop-filter: blur(15px);
+        z-index: 1000;
+        padding-top:20px;
+        padding-left: 20px;
+        /* transition: height 0.3s ease, transform 0.3s ease; */
+        transition: left 0.3s ease-in-out; 
+    }
+
+    #joinus-trigger:checked + .custom-joinus-nav {
+        left:0;
+     
+    }
+
+
+    .custom-ExcutiveLeaders-nav{
+
+        position: fixed;
+        left: 100%;
+        top: 0;
+        width: 100%; /* Adjust the width as needed */
+        height: 100vh;
+        background: linear-gradient(180deg, rgba(10, 10, 10, 0.20) 0%, rgba(115, 115, 115, 0.30) 100%);
+        backdrop-filter: blur(15px);
+        z-index: 1000;
+        padding-top:20px;
+        padding-left: 20px;
+        /* transition: height 0.3s ease, transform 0.3s ease; */
+        transition: left 0.5s ease-in-out; 
+    }
+
+    #ExcutiveLeaders-trigger:checked + .custom-ExcutiveLeaders-nav {
+        left:0;
+     
+    }
+
+
+
+    .custom-job-nav {
+        /* CSS styles for the jobs slider */
+        position: fixed;
+        left: 100%;
+        top: 0;
+        width: 100%; /* Adjust the width as needed */
+        height: 100vh;
+        background: linear-gradient(180deg, rgba(10, 10, 10, 0.20) 0%, rgba(115, 115, 115, 0.30) 100%);
+        backdrop-filter: blur(15px);
+        z-index: 1000;
+        padding-top:20px;
+        padding-left: 20px;
+        /* transition: all 0.3s ease-in-out;
+        transform: translateX(-100%); */
+        transition: left 0.3s ease-in-out; 
+        display: flex;
+        flex-direction: column;
+    }
+
+    #jobs-trigger:checked + .custom-job-nav {
+        left:0;
+     
+    }
+.support{
+    padding-top: 180px;
+}
+
+
+.platforms {
+    position: relative;
+}
+.platforms-wrapper {
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    /* backdrop-filter: blur(4px); */
+    border-radius: 8px;
+    display: flex;
+    flex-direction: row;
+    padding: 15px 1px;
+    font-size: 50px;
+    margin-top: -2%;
+}
+.aduclix {
+    position: relative;
+    font-weight: 300;
+}
+.aduclix-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.platform-content {
+    width: 100%;
+    position: relative;
+    backdrop-filter: blur(50px);
+    background: linear-gradient(180deg, rgba(10, 10, 10, 0.5), rgba(115, 115, 115, 0.5));
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding:70px 46px;
+    margin-left: -2%;
+    margin-top: -3%;
+    box-sizing: border-box;
+    text-align: left;
+    gap:6px;
+    font-size: 18px;
+    color: #fdfdfd;
+    font-family: Poppins;
+}
+
+
+
+
+.industries {
+    position: relative;
+}
+.industries-wrapper {
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 8px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 15px 1px;
+    font-size: 50px;
+    margin-top: -2%;
+    
+}
+.aerospace-and-defense {
+    position: relative;
+    font-weight: 300;
+}
+.aerospace-and-defense-wrapper {
+    width: 658.9px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+/* .industries-content {
+    width: 100%;
+    position: relative;
+    backdrop-filter: blur(50px);
+    background: linear-gradient(180deg, rgba(10, 10, 10, 0.5), rgba(115, 115, 115, 0.5));
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 70px 46px;
+    margin-left: -2%;
+    margin-top: -2%;
+    box-sizing: border-box;
+    gap: 20px;
+    text-align: left;
+    font-size: 15px;
+    color: #fdfdfd;
+    font-family: Poppins;
+} */
+
+
+.industries-content {
+    width: 100%;
+    position: relative;
+    backdrop-filter: blur(50px);
+    background: linear-gradient(180deg, rgba(10, 10, 10, 0.5), rgba(115, 115, 115, 0.5));
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 70px 46px;
+    margin-left: -2%;
+    margin-top: -2%;
+    box-sizing: border-box;
+    text-align: left;
+    font-size: 15px;
+    gap:7%;
+    color: #fdfdfd;
+    font-family: Poppins;
+    height: 100%; /* Set a fixed height */
+    overflow-y: auto; /* Enable vertical scrolling */
+    scrollbar-width: thin; /* Optional: customize scrollbar width */
+    scrollbar-color: rgba(255, 255, 255, 0.5) rgba(0, 0, 0, 0.2); /* Optional: customize scrollbar colors */
+}
+
+
+::-webkit-scrollbar {
+    display: none;
+}
+.card {
+    display: flex;
+    width: 80%;
+    border-radius: 8px;
+    height:300px;
+    overflow: hidden;
+    color: #FDFDFD;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color:#263238;
+    padding-bottom: 2%;
+  }
+
+  .card img {
+    height: 100%;
+    
+    padding-left: 20px;
+    
+  }
+
+  .card-content {
+    padding: 20px;
+    width: 80%;
+  }
+  .card-content p{
+    font-size: 17px;
+    font-family: Poppins;
+  }
+  .section_two{
+    background-color: #141814;
+    color: #fdfdfd;
+    padding-top: 3%;
+  }
+  .section_two h1{
+    padding-left: 10%;
+    font-family: Poppins;
+  }
+  .card_hello{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 30px;
+    padding-bottom: 50px;
+  } 
+  .events{
+    display: flex;
+    justify-content: center;
+  }
+  .event_sec h1{
+    color: #fff;
+    padding-left: 10%;
+    font-family: Poppins;
+  }
+  .events img{
+    height:480px;
+    padding: 10px;
+    width:25.7%;
+  }
+  /* footer */
+  
+  .join-the-gigleaz {
+    position: relative;
+}
+.group-icon {
+    position: absolute;
+    height: 44.31%;
+    width: 52.46%;
+    top: 27.85%;
+    right: 0.03%;
+    bottom: 27.84%;
+    left: 47.51%;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+}
+.group-icon1 {
+    position: absolute;
+    height: 100%;
+    width: 37.01%;
+    top: 0%;
+    right: 62.99%;
+    bottom: 0%;
+    left: 0%;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+}
+.logo {
+    width: 158.6px;
+    position: relative;
+    height: 57.1px;
+}
+.all-rights-reserved {
+    width: 295px;
+    position: relative;
+    line-height: 17.14px;
+    display: inline-block;
+    height: 18px;
+    flex-shrink: 0;
+}
+.copyright {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 6.9px;
+}
+.social-icons {
+    width: 30px;
+    position: relative;
+    height: 30px;
+}
+.social-links {
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 13.7px;
+}
+.logo-parent {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 50px;
+}
+.getting-started {
+    position: relative;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+.getting-started-parent {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 10px;
+}
+.sitemap {
+    position: relative;
+    text-transform: uppercase;
+}
+.opportunities-parent {
+    width: 180px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 10px;
+}
+.frame-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    font-size: 16px;
+}
+.sitemap-parent {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 30px;
+    font-size: 20px;
+}
+.head-office {
+    margin: 0;
+}
+.th-floor-orbit {
+    margin: 0;
+    font-size: 12px;
+}
+.head-office-gigleaz-pvt-container {
+    width: 300px;
+    position: relative;
+    display: inline-block;
+    font-size: 14px;
+}
+.satellite-office {
+    margin: 0;
+    font-size: 14px;
+}
+.satellite-office-rajapushpa-su-container {
+    width: 300px;
+    position: relative;
+    display: inline-block;
+    font-size: 12px;
+}
+.uk-office-45-monmouth-container {
+    width: 300px;
+    position: relative;
+    display: inline-block;
+}
+.head-office-gigleaz-pvt-ltd-12-parent {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 10px;
+    font-size: 16px;
+}
+.footer-parent {
+    width: 1340px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 0px 100px;
+    box-sizing: border-box;
+    font-size: 16px;
+    color: #fdfdfd;
+}
+.join-the-gigleaz-team-parent {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 60px 70px;
+    box-sizing: border-box;
+    gap: 75px;
+    text-align: left;
+    font-size: 56px;
+    color: #fafafa;
+    font-family: Poppins;
+}
+.follow-us-on {
+    position: relative;
+    line-height: 17.14px;
+    font-weight: 600;
+}
+.youtube-icon {
+    width: 18.1px;
+    position: relative;
+    height: 13px;
+}
+.twitter-icon {
+    width: 16.8px;
+    position: relative;
+    height: 17.3px;
+}
+.instagram-icon {
+    width: 18.1px;
+    position: relative;
+    height: 18.1px;
+}
+.linkdin-icon {
+    width: 22.2px;
+    position: relative;
+    height: 22.2px;
+}
+.social-links {
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+.social-links-parent {
+    width: 100%;
+    position: relative;
+    background-color: #29ab87;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 614px;
+    box-sizing: border-box;
+    text-align: left;
+    font-size: 16px;
+    color: #fff;
+    font-family: Poppins;
+}
+.bottom-footer{
+    background-color: #29ab87;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.follow-us-on {
+    position: relative;
+    line-height: 17.14px;
+    font-weight: 600;
+    font-size: 14px;
+    font-family: Poppins;
+    
+}
+.youtube-icon {
+    width: 18.1px;
+    position: relative;
+    height: 13px;
+}
+.twitter-icon {
+    width: 16.8px;
+    position: relative;
+    height: 17.3px;
+}
+.instagram-icon {
+    width: 18.1px;
+    position: relative;
+    height: 18.1px;
+}
+.linkdin-icon {
+    width: 22.2px;
+    position: relative;
+    height: 22.2px;
+}
+.social-links {
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 45px;
+}
+.social-links-parent {
+    width: 100%;
+    position: relative;
+    background-color: #29ab87;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 614px;
+    box-sizing: border-box;
+    text-align: left;
+    font-size: 16px;
+    color: #fff;
+    font-family: Poppins;
+    margin-top: 0%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+
+.products-and-platforms {
+    position: relative;
+    font-weight: 600;
+}
+.innovative-strategies-to {
+    position: relative;
+    font-size: 36px;
+    letter-spacing: 0.05em;
+    font-weight: 100;
+    text-shadow: 1px 0 0 #fff, 0 1px 0 #fff, -1px 0 0 #fff, 0 -1px 0 #fff;
+}
+.products-and-platforms-parent {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 25px 50px;
+    gap: 10px;
+}
+.strategic-consulting-child {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border-radius: 23.91px 0px 0px 23.91px;
+    background: linear-gradient(180deg, rgba(217, 217, 217, 0), rgba(0, 0, 0, 0.75) 80%);
+    width: 600px;
+    height: 300px;
+}
+.strategic-consulting {
+    width: 600px;
+    position: relative;
+    border-radius: 25px;
+    height: 300px;
+    overflow: hidden;
+    flex-shrink: 0;
+    background-image: url('Strategic Consulting.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+}
+.digital-transformation-child {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border-radius: 0px 23.91px 23.91px 0px;
+    background: linear-gradient(180deg, rgba(217, 217, 217, 0), rgba(0, 0, 0, 0.75) 80%);
+    width: 600px;
+    height: 300px;
+}
+.digital-transformation {
+    width: 600px;
+    position: relative;
+    border-radius: 25px;
+    height: 300px;
+    overflow: hidden;
+    flex-shrink: 0;
+    background-image: url('Digital Transformation.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+}
+.custom-software-development {
+    width: 600px;
+    position: relative;
+    border-radius: 25px;
+    height: 300px;
+    overflow: hidden;
+    flex-shrink: 0;
+    background-image: url('Custom Software Development.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+}
+.data-analytics-and {
+    position: absolute;
+    top: 240px;
+    left: 30.5px;
+    font-weight: 600;
+    display: inline-block;
+    width: 500px;
+}
+.data-analytics-and-insights {
+    width: 600px;
+    position: relative;
+    border-radius: 25px;
+    height: 300px;
+    overflow: hidden;
+    flex-shrink: 0;
+    background-image: url('Data Analytics and Insights.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+}
+.uxui-design {
+    width: 600px;
+    position: relative;
+    border-radius: 25px;
+    height: 300px;
+    overflow: hidden;
+    flex-shrink: 0;
+    background-image: url('UX/UI Design.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+}
+.cloud-solutions {
+    width: 600px;
+    position: relative;
+    border-radius: 25px;
+    height: 300px;
+    overflow: hidden;
+    flex-shrink: 0;
+    background-image: url('Cloud Solutions.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+}
+.cybersecurity {
+    width: 600px;
+    position: relative;
+    border-radius: 25px;
+    height: 300px;
+    overflow: hidden;
+    flex-shrink: 0;
+    background-image: url('Cybersecurity.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+}
+.training-and-workshops {
+    width: 600px;
+    position: relative;
+    border-radius: 25px;
+    height: 300px;
+    overflow: hidden;
+    flex-shrink: 0;
+    background-image: url('Training and Workshops.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+}
+.navigating-the-future {
+    width: 1440px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 100px;
+    box-sizing: border-box;
+    gap: 35px;
+    font-size: 20px;
+    color: #fdfdfd;
+}
+.frame-parent {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: left;
+    font-size: 40px;
+    color: #fff;
+    font-family: Poppins;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+.strategic-consulting-child {
+  height: 300px;
+  width: 600px;
+  position: relative;
+  border-radius: 23.91px 0 0 23.91px;
+  background: linear-gradient(
+    180deg,
+    rgba(217, 217, 217, 0),
+    rgba(0, 0, 0, 0.75) 80%
+  );
+  display: none;
+  max-width: 100%;
+  background-image: url("Assets/Strategic\ Consulting\ \(1\).png");
+}
+.strategic-consulting1 {
+  width: 500px;
+  position: relative;
+  font-weight: 600;
+  display: inline-block;
+  flex-shrink: 0;
+  max-width: 100%;
+  z-index: 1;
+  
+}
+.digital-transformation-child,
+.strategic-consulting {
+  width: 600px;
+  background: linear-gradient(
+    180deg,
+    rgba(217, 217, 217, 0),
+    rgba(0, 0, 0, 0.75) 80%
+  );
+  max-width: 100%;
+  
+
+}
+.strategic-consulting {
+  margin: 0 !important;
+  position: absolute;
+  top: 100px;
+  left: 102.5px;
+  border-radius: var(--br-6xl);
+  overflow: hidden;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: flex-start;
+  padding: var(--padding-11xl);
+  box-sizing: border-box;
+  background-image: url("Assets/Strategic\ Consulting\ \(1\).png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  min-height: 300px;
+}
+.digital-transformation-child {
+  height: 300px;
+  position: relative;
+  border-radius: 0 23.91px 23.91px 0;
+  display: none;
+}
+.digital-transformation1 {
+  width: 500px;
+  position: relative;
+  font-weight: 600;
+  display: inline-block;
+  flex-shrink: 0;
+  max-width: 100%;
+  z-index: 1;
+}
+.custom-software-development-child,
+.digital-transformation {
+  width: 600px;
+  background: linear-gradient(
+    180deg,
+    rgba(217, 217, 217, 0),
+    rgba(0, 0, 0, 0.75) 80%
+  );
+  max-width: 100%;
+}
+.digital-transformation {
+  margin: 0 !important;
+  position: absolute;
+  top: 100px;
+  left: 737.5px;
+  border-radius: var(--br-6xl);
+  overflow: hidden;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: flex-start;
+  padding: var(--padding-11xl);
+  box-sizing: border-box;
+  background-image: url(./public/digital-transformation@3x.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  min-height: 300px;
+}
+.custom-software-development-child {
+  height: 300px;
+  position: relative;
+  border-radius: 23.91px 0 0 23.91px;
+  display: none;
+}
+.custom-software-development1 {
+  width: 500px;
+  position: relative;
+  font-weight: 600;
+  display: inline-block;
+  flex-shrink: 0;
+  max-width: 100%;
+  z-index: 1;
+}
+.custom-software-development,
+.data-analytics-and-insights-child {
+  width: 600px;
+  background: linear-gradient(
+    180deg,
+    rgba(217, 217, 217, 0),
+    rgba(0, 0, 0, 0.75) 80%
+  );
+  max-width: 100%;
+}
+.custom-software-development {
+  margin: 0 !important;
+  position: absolute;
+  top: 435px;
+  left: 102.5px;
+  border-radius: var(--br-6xl);
+  overflow: hidden;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: flex-start;
+  padding: var(--padding-11xl);
+  box-sizing: border-box;
+  background-image: url(./public/strategic-consulting@3x.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  min-height: 300px;
+}
+.data-analytics-and-insights-child {
+  height: 300px;
+  position: relative;
+  border-radius: 0 23.91px 23.91px 0;
+  display: none;
+}
+.data-analytics-and {
+  width: 500px;
+  position: relative;
+  font-weight: 600;
+  display: inline-block;
+  flex-shrink: 0;
+  max-width: 100%;
+  z-index: 1;
+}
+.data-analytics-and-insights,
+.uxui-design-child {
+  width: 600px;
+  background: linear-gradient(
+    180deg,
+    rgba(217, 217, 217, 0),
+    rgba(0, 0, 0, 0.75) 80%
+  );
+  max-width: 100%;
+}
+.data-analytics-and-insights {
+  margin: 0 !important;
+  position: absolute;
+  top: 435px;
+  left: 737.5px;
+  border-radius: var(--br-6xl);
+  overflow: hidden;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: flex-start;
+  padding: var(--padding-11xl);
+  box-sizing: border-box;
+  background-image: url(./public/digital-transformation@3x.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  min-height: 300px;
+}
+.uxui-design-child {
+  height: 300px;
+  position: relative;
+  border-radius: 0 23.91px 23.91px 0;
+  display: none;
+}
+.uxui-design1 {
+  width: 500px;
+  position: relative;
+  font-weight: 600;
+  display: inline-block;
+  flex-shrink: 0;
+  max-width: 100%;
+  z-index: 1;
+}
+.cloud-solutions,
+.cybersecurity-child,
+.uxui-design {
+  width: 600px;
+  background: linear-gradient(
+    180deg,
+    rgba(217, 217, 217, 0),
+    rgba(0, 0, 0, 0.75) 80%
+  );
+}
+.uxui-design {
+  margin: 0 !important;
+  position: absolute;
+  top: 770px;
+  left: 102.5px;
+  border-radius: var(--br-6xl);
+  overflow: hidden;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: flex-start;
+  padding: var(--padding-11xl);
+  box-sizing: border-box;
+  background-image: url(./public/digital-transformation@3x.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  min-height: 300px;
+  max-width: 100%;
+}
+.cloud-solutions,
+.cybersecurity-child {
+  height: 300px;
+}
+.cloud-solutions {
+  border: 0;
+  background-color: transparent;
+  outline: 0;
+  margin: 0 !important;
+  position: absolute;
+  top: 770px;
+  left: 737.5px;
+  border-radius: var(--br-6xl);
+  overflow: hidden;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-11xl);
+  box-sizing: border-box;
+  background-image: url(./public/digital-transformation@3x.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  font-family: var(--font-poppins);
+  font-weight: 600;
+  font-size: var(--font-size-xl);
+  color: var(--color-gray-1000);
+}
+.cybersecurity-child {
+  position: relative;
+  border-radius: 0 23.91px 23.91px 0;
+  display: none;
+  max-width: 100%;
+}
+.cybersecurity2 {
+  width: 500px;
+  position: relative;
+  font-weight: 600;
+  display: inline-block;
+  flex-shrink: 0;
+  max-width: 100%;
+  z-index: 1;
+}
+.cybersecurity1,
+.training-and-workshops-child {
+  width: 600px;
+  background: linear-gradient(
+    180deg,
+    rgba(217, 217, 217, 0),
+    rgba(0, 0, 0, 0.75) 80%
+  );
+  max-width: 100%;
+}
+.cybersecurity1 {
+  margin: 0 !important;
+  position: absolute;
+  top: 1105px;
+  left: 102.5px;
+  border-radius: var(--br-6xl);
+  overflow: hidden;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: flex-start;
+  padding: var(--padding-11xl);
+  box-sizing: border-box;
+  background-image: url(./public/digital-transformation@3x.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  min-height: 300px;
+}
+.training-and-workshops-child {
+  height: 300px;
+  position: relative;
+  border-radius: 0 23.91px 23.91px 0;
+  display: none;
+}
+.training-and-workshops1 {
+  width: 500px;
+  position: relative;
+  font-weight: 600;
+  display: inline-block;
+  flex-shrink: 0;
+  max-width: 100%;
+  z-index: 1;
+}
+.training-and-workshops {
+  width: 600px;
+  margin: 0 !important;
+  position: absolute;
+  top: 1105px;
+  left: 737.5px;
+  border-radius: var(--br-6xl);
+  background: linear-gradient(
+    180deg,
+    rgba(217, 217, 217, 0),
+    rgba(0, 0, 0, 0.75) 80%
+  );
+  overflow: hidden;
+  flex-shrink: 0;
+  align-items: flex-end;
+  justify-content: flex-start;
+  padding: var(--padding-11xl);
+  background-image: url(./public/digital-transformation@3x.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  min-height: 300px;
+}
+.navigating-the-future1,
+.services-grid,
+.training-and-workshops {
+  display: flex;
+  flex-direction: row;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+.navigating-the-future1 {
+  height: 1505px;
+  flex: 1;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: var(--padding-81xl) 0;
+  position: relative;
+  gap: var(--gap-16xl);
+ 
+}
+.services-grid {
+  align-self: stretch;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 0 0 var(--padding-11xs);
+  text-align: left;
+  font-size: var(--font-size-xl);
+  color: var(--color-gray-1000);
+  font-family: var(--font-poppins);
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .strategic-consulting-child {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border-radius: 23.91px 0px 0px 23.91px;
+    background: linear-gradient(180deg, rgba(217, 217, 217, 0), rgba(0, 0, 0, 0.75) 80%);
+    width: 600px;
+    height: 300px;
+}
+.strategic-consulting1 {
+    position: absolute;
+    top: 240px;
+    left: 30.5px;
+    font-weight: 600;
+    display: none;
+    width: 500px;
+}
+.strategic-consulting {
+    width: 600px;
+    position: relative;
+    border-radius: 25px;
+    height: 300px;
+    overflow: hidden;
+    flex-shrink: 0;
+    background-image: url('Strategic Consulting.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+}
+.digital-transformation-child {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border-radius: 0px 23.91px 23.91px 0px;
+    background: linear-gradient(180deg, rgba(217, 217, 217, 0), rgba(0, 0, 0, 0.75) 80%);
+    width: 600px;
+    height: 300px;
+}
+.digital-transformation {
+    width: 600px;
+    position: relative;
+    border-radius: 25px;
+    height: 300px;
+    overflow: hidden;
+    flex-shrink: 0;
+    background-image: url('Digital Transformation.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+}
+.custom-software-development {
+    width: 600px;
+    position: relative;
+    border-radius: 25px;
+    height: 300px;
+    overflow: hidden;
+    flex-shrink: 0;
+    background-image: url('Custom Software Development.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+}
+.data-analytics-and {
+    position: absolute;
+    top: 240px;
+    left: 30.5px;
+    font-weight: 600;
+    display: inline-block;
+    width: 500px;
+}
+.data-analytics-and-insights {
+    width: 600px;
+    position: relative;
+    border-radius: 25px;
+    height: 300px;
+    overflow: hidden;
+    flex-shrink: 0;
+    background-image: url('Data Analytics and Insights.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+}
+.uxui-design {
+    width: 600px;
+    position: relative;
+    border-radius: 25px;
+    height: 300px;
+    overflow: hidden;
+    flex-shrink: 0;
+    background-image: url('UX/UI Design.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+}
+.cloud-solutions {
+    width: 600px;
+    position: relative;
+    border-radius: 25px;
+    height: 300px;
+    overflow: hidden;
+    flex-shrink: 0;
+    background-image: url('Cloud Solutions.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+}
+.cybersecurity {
+    width: 600px;
+    position: relative;
+    border-radius: 25px;
+    height: 300px;
+    overflow: hidden;
+    flex-shrink: 0;
+    background-image: url('Cybersecurity.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+}
+.training-and-workshops {
+    width: 600px;
+    position: relative;
+    border-radius: 25px;
+    height: 300px;
+    overflow: hidden;
+    flex-shrink: 0;
+    background-image: url('Training and Workshops.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+}
+.navigating-the-future {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 100px;
+    box-sizing: border-box;
+    gap: 35px;
+    text-align: left;
+    font-size: 20px;
+    color: #fdfdfd;
+    font-family: Poppins;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ */
+
+
+
+
+
+
+ .products-and-platforms {
+    position: relative;
+    font-weight: 600;
+    font-size: 39px;
+}
+.innovative-strategies-to {
+    position: relative;
+    font-size: 25px;
+    letter-spacing: 0.05em;
+    
+
+    text-shadow: 1px 0 0 #fff, 0 1px 0 #fff, -1px 0 0 #fff, 0 -1px 0 #fff;
+}
+.products-and-platforms-parent {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 25px 103px;
+    gap: 10px;
+    padding-top: 5%;
+}
+.strategic-consulting-child {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border-radius: 23.91px 0px 0px 23.91px;
+    background: linear-gradient(180deg, rgba(217, 217, 217, 0), rgba(0, 0, 0, 0.75) 80%);
+    width: 600px;
+    height: 300px;
+}
+.strategic-consulting {
+    width: 520px;
+    position: relative;
+    border-radius: 25px;
+    height: 300px;
+    overflow: hidden;
+    flex-shrink: 0;
+    background-image: url('Assets/Strategic\ Consulting\ \(1\).png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+}
+.digital-transformation-child {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border-radius: 0px 23.91px 23.91px 0px;
+    background: linear-gradient(180deg, rgba(217, 217, 217, 0), rgba(0, 0, 0, 0.75) 80%);
+    width: 600px;
+    height: 300px;
+}
+.digital-transformation {
+    width: 520px;
+    position: relative;
+    border-radius: 25px;
+    height: 300px;
+    overflow: hidden;
+    flex-shrink: 0;
+    background-image: url('Assets/Digital\ Transformation.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+}
+.custom-software-development {
+    width: 520px;
+    position: relative;
+    border-radius: 25px;
+    height: 300px;
+    overflow: hidden;
+    flex-shrink: 0;
+    background-image: url('Assets/Custom\ Software\ Development.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+}
+.data-analytics-and {
+    position: absolute;
+    top: 240px;
+    left: 30.5px;
+    font-weight: 600;
+    display: inline-block;
+    width: 500px;
+}
+.data-analytics-and-insights {
+    width: 520px;
+    position: relative;
+    border-radius: 25px;
+    height: 300px;
+    overflow: hidden;
+    flex-shrink: 0;
+    background-image: url('Assets/Data\ Analytics\ and\ Insights.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+}
+.uxui-design {
+    width: 520px;
+    position: relative;
+    border-radius: 25px;
+    height: 300px;
+    overflow: hidden;
+    flex-shrink: 0;
+    background-image: url('Assets/UI\ Design.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+}
+.cloud-solutions {
+    width: 520px;
+    position: relative;
+    border-radius: 25px;
+    height: 300px;
+    overflow: hidden;
+    flex-shrink: 0;
+    background-image: url('Assets/Cloud\ Solutions.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+}
+.cybersecurity {
+    width: 520px;
+    position: relative;
+    border-radius: 25px;
+    height: 300px;
+    overflow: hidden;
+    flex-shrink: 0;
+    background-image: url('Assets/Cybersecurity.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+}
+.training-and-workshops {
+    width: 520px;
+    position: relative;
+    border-radius: 25px;
+    height: 300px;
+    overflow: hidden;
+    flex-shrink: 0;
+    background-image: url('Assets/Training\ and\ Workshops.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+}
+.navigating-the-future {
+    width: 1440px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 100px;
+    box-sizing: border-box;
+    gap: 35px;
+    font-size: 20px;
+    color: #fdfdfd;
+}
+.section-key {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: left;
+    font-size: 40px;
+    color: #fff;
+    font-family: Poppins;
+}
+
+
